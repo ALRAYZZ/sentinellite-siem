@@ -149,19 +149,6 @@ cd frontend
 npm run build
 ```
 
-The included parser test uses a representative Security event. More fixture-driven tests should be added for Sysmon variants, empty fields, nested `UserData`, malformed XML, checkpoint recovery and rule thresholds.
-
-## Roadmap after the first run
-
-1. Validate collector permissions and event coverage on a Windows 10/11 machine.
-2. Add `EvtSubscribe` with durable bookmarks and channel-reset recovery.
-3. Resolve localized publisher messages with `EvtFormatMessage` while keeping XML fields as the primary data source.
-4. Adopt an ECS/OCSF-aligned schema and per-provider/version field mappings.
-5. Add configurable detection rules, suppression, severity tuning and event-to-alert evidence links.
-6. Add retention controls, database maintenance, backup/export and resource limits.
-7. Add remote agents with mutual authentication, TLS, enrollment and back-pressure only after the local collector is reliable.
-8. Package the UI as a signed desktop app or Windows service + management console.
-
 ## License
 
 MIT. See [LICENSE](LICENSE).
